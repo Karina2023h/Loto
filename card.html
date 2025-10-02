@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="is">
+<head>
+  <meta charset="UTF-8">
+  <title>Header Example</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="left">
+      <!-- Лого -->
+      <img src="./img/SIBS - Logo.svg" alt="Logo" class="logo">
+
+      <!-- Навігація -->
+      <nav>
+        <a href="index.html">Heilsuefling</a>
+        <a href="#">SÍBS blaðið</a>
+        <a href="#">Greinasafn</a>
+        <a href="#" class="active">Happdrættið</a>
+      </nav>
+    </div>
+
+    <div class="right">
+
+    <!-- Іконка пошук -->
+<div class="icon" id="openLoginModal">
+  <img src="./img/SIBS - Top nav item.svg" alt="Search">
+</div>
+
+
+<!-- Модальне вікно Логін -->
+<div id="loginModalBox" class="login-modal">
+  <div class="login-modal-content">
+    <!-- Верхній хедер -->
+    <div class="login-modal-header">
+      <div class="login-tabs">
+        <span class="login-tab active">Electric ID</span>
+        <span class="login-tab">Auðkenni app</span>
+      </div>
+      <span class="login-close">&times;</span>
+    </div>
+
+    <!-- Тіло -->
+    <div class="login-modal-body">
+      <h3>Log in using Electric ID</h3>
+      <label for="login-phone">Phone <span style="color:red">*</span></label>
+      <input type="text" id="login-phone" placeholder="622-1540">
+    </div>
+
+    <!-- Footer -->
+    <div class="login-modal-footer">
+      <button class="login-btn login-cancel">Cancel</button>
+      <button class="login-btn login-continue">Continue</button>
+    </div>
+  </div>
+</div>
+
+
+
+<script>
+const loginModalBox = document.getElementById("loginModalBox");
+const openLoginModal = document.getElementById("openLoginModal");
+const loginClose = loginModalBox.querySelector(".login-close");
+const loginCancel = loginModalBox.querySelector(".login-cancel");
+
+// Відкрити
+openLoginModal.onclick = function() {
+  loginModalBox.style.display = "block";
+}
+
+// Закрити по хрестику
+loginClose.onclick = function() {
+  loginModalBox.style.display = "none";
+}
+
+// Закрити по Cancel
+loginCancel.onclick = function() {
+  loginModalBox.style.display = "none";
+}
+
+// Закрити по кліку поза вікном
+window.onclick = function(e) {
+  if (e.target == loginModalBox) {
+    loginModalBox.style.display = "none";
+  }
+}
+</script>
+
+
+<!-- Іконка корзина -->
+<a href="card.html" class="icon">
+  <img src="./img/SIBS - Icons.svg" alt="Cart">
+  <span class="cart-badge">2</span>
+</a>
+
+
+<!-- Іконка профіль -->
+<div class="icon">
+  <img src="./img/SIBS - Top nav item (1).svg" alt="User">
+</div>
+
+   
+
+   
+    </div>
+  </header>
+ 
+     
+
+
+<footer class="footer">
+  <div class="footer-container">
+    
+    <!-- Ліва частина -->
+    <div class="footer-left">
+      <img src="./img/Layer_1-2.svg" alt="Logo" class="footer-logo">
+      <div class="footer-left1">
+      <p>Borgartún 28a | 105 Reykjavík</p>
+      <p>+354 560 4800 | sibs@sibs.is</p>
+      <p>mán–fös: 9:00–15:00</p>
+      </div>
+    </div>
+
+    <!-- Права частина -->
+    <div class="footer-right">
+      <div class="footer-col">
+        <a href="#">SÍBS blaðið</a>
+        <a href="#">Greinar</a>
+        <a href="#">Heilsuefling</a>
+      </div>
+      <div class="footer-col">
+        <a href="#">Um SÍBS</a>
+        <a href="#">Skilmálar</a>
+        <a href="#">Persónuvernd</a>
+      </div>
+    </div>
+
+    <!-- Соцмережі -->
+    <div class="footer-social">
+      <a href="#"><img src="./img/SIBS - Icons (4).svg" alt="Facebook"></a>
+      <a href="#"><img src="./img/SIBS - Icons (5).svg" alt="Instagram"></a>
+    </div>
+
+  </div>
+</footer>
+
+<script >
+  const icons = document.querySelectorAll('.icon');
+
+icons.forEach(icon => {
+  icon.addEventListener('click', function () {
+    // зняти active з усіх
+    icons.forEach(i => i.classList.remove('active'));
+    // додати active на поточну
+    this.classList.add('active');
+  });
+});
+
+</script>
+</body>
+</html>

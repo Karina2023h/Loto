@@ -22,22 +22,83 @@
 
     <div class="right">
 
-         <!-- Іконка пошук -->
-      <div class="icon">
-        <img src="./img/SIBS - Top nav item.svg" alt="Search">
-      </div>
-
-  
-          <!-- Іконка корзина -->
-      <div class="icon">
-  <img src="./img/SIBS - Icons.svg" alt="Cart">
-  <span class="cart-badge">2</span>
+    <!-- Іконка пошук -->
+<div class="icon" id="openLoginModal">
+  <img src="./img/SIBS - Top nav item.svg" alt="Search">
 </div>
 
-       <!-- Іконка профіль -->
-      <div class="icon">
-        <img src="./img/SIBS - Top nav item (1).svg" alt="User">
+
+<!-- Модальне вікно Логін -->
+<div id="loginModalBox" class="login-modal">
+  <div class="login-modal-content">
+    <!-- Верхній хедер -->
+    <div class="login-modal-header">
+      <div class="login-tabs">
+        <span class="login-tab active">Electric ID</span>
+        <span class="login-tab">Auðkenni app</span>
       </div>
+      <span class="login-close">&times;</span>
+    </div>
+
+    <!-- Тіло -->
+    <div class="login-modal-body">
+      <h3>Log in using Electric ID</h3>
+      <label for="login-phone">Phone <span style="color:red">*</span></label>
+      <input type="text" id="login-phone" placeholder="622-1540">
+    </div>
+
+    <!-- Footer -->
+    <div class="login-modal-footer">
+      <button class="login-btn login-cancel">Cancel</button>
+      <button class="login-btn login-continue">Continue</button>
+    </div>
+  </div>
+</div>
+
+
+
+<script>
+const loginModalBox = document.getElementById("loginModalBox");
+const openLoginModal = document.getElementById("openLoginModal");
+const loginClose = loginModalBox.querySelector(".login-close");
+const loginCancel = loginModalBox.querySelector(".login-cancel");
+
+// Відкрити
+openLoginModal.onclick = function() {
+  loginModalBox.style.display = "block";
+}
+
+// Закрити по хрестику
+loginClose.onclick = function() {
+  loginModalBox.style.display = "none";
+}
+
+// Закрити по Cancel
+loginCancel.onclick = function() {
+  loginModalBox.style.display = "none";
+}
+
+// Закрити по кліку поза вікном
+window.onclick = function(e) {
+  if (e.target == loginModalBox) {
+    loginModalBox.style.display = "none";
+  }
+}
+</script>
+
+
+<!-- Іконка корзина -->
+<a href="card.html" class="icon">
+  <img src="./img/SIBS - Icons.svg" alt="Cart">
+  <span class="cart-badge">2</span>
+</a>
+
+
+<!-- Іконка профіль -->
+<div class="icon">
+  <img src="./img/SIBS - Top nav item (1).svg" alt="User">
+</div>
+
    
 
    
@@ -60,12 +121,140 @@
 
   </div>
   <div class="buttons">
-  <a href="#" class="btn red">
-    <img src="./img/SIBS - Icons (2).svg" alt="Search"> Laus miðanúmer
-  </a>
-  <a href="#" class="btn white" style="cursor: pointer;">
-    Leita að vinningi <img src="./img/SIBS - Icons (3).svg" alt="Arrow">
-  </a>
+<!-- Іконка пошук -->
+<a href="#" class="btn red" id="openSearch">
+  <img src="./img/SIBS - Icons (2).svg" alt="Search"> Laus miðanúmer
+</a>
+
+<!-- Модальне вікно -->
+<div id="searchModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <input type="text" placeholder="Leita..." class="search-input"/>
+
+    <div class="modal-footer">
+      <a href="#" class="link-left">Purchase ticket →</a>
+      <a href="#" class="link-right">Find a winning →</a>
+    </div>
+  </div>
+</div>
+
+<style>
+/* Фон */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(60, 60, 60, 0.8);
+  backdrop-filter: blur(4px);
+}
+
+/* Контейнер */
+.modal-content {
+  margin: 15% auto;
+  width: 640px;
+  gap: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.close {
+    position: absolute;
+    right: 0px;
+    top: -50px;
+    font-size: 40px;
+    cursor: pointer;
+    color: #fff;
+    width: 22px;
+    height: 22px;
+    text-align: center;
+    line-height: 22px;
+}
+
+/* Інпут */
+.search-input {
+  width: 620px;
+  height: 20px;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
+  outline: none;
+}
+
+/* Нижній блок */
+.modal-footer {
+    width: 620px;
+    height: 36px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: #f7f7f7;
+    align-content: center;
+    align-items: center;
+}
+
+.modal-footer a {
+font-weight: 400;
+font-size: 16px;
+line-height: 18px;
+letter-spacing: 1px;
+color: #8C0E18;
+text-decoration: none;
+}
+</style>
+
+<script>
+const modal = document.getElementById("searchModal");
+const openBtn = document.getElementById("openSearch");
+const closeBtn = document.querySelector(".close");
+
+openBtn.onclick = function(e) {
+  e.preventDefault();
+  modal.style.display = "block";
+}
+
+closeBtn.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(e) {
+  if (e.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+
+  
+ <a href="javascript:void(0)" 
+   class="btn white search-btn">
+   Leita að vinningi 
+   <img src="./img/SIBS - Icons (3).svg" alt="Arrow">
+</a>
+
+<style>
+.search-btn {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  color: #333;
+
+  /* ВАЖЛИВО щоб було клікабельним */
+  position: relative;
+  z-index: 9999;
+  pointer-events: auto;
+}
+</style>
+
 </div>
 
 </section>
@@ -268,5 +457,18 @@
   </div>
 </footer>
 
+<script >
+  const icons = document.querySelectorAll('.icon');
+
+icons.forEach(icon => {
+  icon.addEventListener('click', function () {
+    // зняти active з усіх
+    icons.forEach(i => i.classList.remove('active'));
+    // додати active на поточну
+    this.classList.add('active');
+  });
+});
+
+</script>
 </body>
 </html>
