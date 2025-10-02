@@ -214,6 +214,8 @@ cursor: pointer;
   max-width: 1392px;
   margin: 40px auto;
   text-align: center;
+  padding-bottom: 25px;
+    padding-top: 20px;
 }
 
 .ticket-grid {
@@ -257,24 +259,24 @@ cursor: pointer;
 }
 
 .ticket::after {
-  content: "Add to cart";
+  content: "";
   position: absolute;
-  bottom: 10px;
+  bottom: -55px;
   left: 50%;
   transform: translateX(-50%);
-  background: #9b0000;
-  color: #fff;
-  font-size: 14px;
-  padding: 5px 12px;
-  border-radius: 4px;
+  width: 100%;  /* ширину підбери під картинку */
+  height: 100%;  /* висоту підбери під картинку */
+  background: url("./3/Flyout.svg") no-repeat center/contain;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.2s;
+  z-index: 9999;
 }
 
 .ticket:hover::after {
   opacity: 1;
 }
+
 
 .load-more {
   background: #fff;
