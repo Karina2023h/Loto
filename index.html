@@ -28,63 +28,6 @@
 </div>
 
 
-<!-- Модальне вікно Логін -->
-<div id="loginModalBox" class="login-modal">
-  <div class="login-modal-content">
-    <!-- Верхній хедер -->
-    <div class="login-modal-header">
-      <div class="login-tabs">
-        <span class="login-tab active">Electric ID</span>
-        <span class="login-tab">Auðkenni app</span>
-      </div>
-      <span class="login-close">&times;</span>
-    </div>
-
-    <!-- Тіло -->
-    <div class="login-modal-body">
-      <h3>Log in using Electric ID</h3>
-      <label for="login-phone">Phone <span style="color:red">*</span></label>
-      <input type="text" id="login-phone" placeholder="622-1540">
-    </div>
-
-    <!-- Footer -->
-    <div class="login-modal-footer">
-      <button class="login-btn login-cancel">Cancel</button>
-      <button class="login-btn login-continue">Continue</button>
-    </div>
-  </div>
-</div>
-
-
-
-<script>
-const loginModalBox = document.getElementById("loginModalBox");
-const openLoginModal = document.getElementById("openLoginModal");
-const loginClose = loginModalBox.querySelector(".login-close");
-const loginCancel = loginModalBox.querySelector(".login-cancel");
-
-// Відкрити
-openLoginModal.onclick = function() {
-  loginModalBox.style.display = "block";
-}
-
-// Закрити по хрестику
-loginClose.onclick = function() {
-  loginModalBox.style.display = "none";
-}
-
-// Закрити по Cancel
-loginCancel.onclick = function() {
-  loginModalBox.style.display = "none";
-}
-
-// Закрити по кліку поза вікном
-window.onclick = function(e) {
-  if (e.target == loginModalBox) {
-    loginModalBox.style.display = "none";
-  }
-}
-</script>
 
 
 <!-- Іконка корзина -->
@@ -470,5 +413,64 @@ icons.forEach(icon => {
 });
 
 </script>
+
+<!-- Модальне вікно Логін -->
+<div id="loginModalBox" class="login-modal">
+  <div class="login-modal-content">
+    <!-- Верхній хедер -->
+    <div class="login-modal-header">
+      <div class="login-tabs">
+        <span class="login-tab active">Electric ID</span>
+        <span class="login-tab">Auðkenni app</span>
+      </div>
+      <span class="login-close">&times;</span>
+    </div>
+
+    <!-- Тіло -->
+    <div class="login-modal-body">
+      <h3>Log in using Electric ID</h3>
+      <label for="login-phone">Phone <span style="color:red">*</span></label>
+      <input type="text" id="login-phone" placeholder="622-1540">
+    </div>
+
+    <!-- Footer -->
+    <div class="login-modal-footer">
+      <button class="login-btn login-cancel">Cancel</button>
+      <button class="login-btn login-continue">Continue</button>
+    </div>
+  </div>
+</div>
+
+
+
+<script>
+const loginModalBox = document.getElementById("loginModalBox");
+const openLoginModal = document.getElementById("openLoginModal");
+const loginClose = loginModalBox.querySelector(".login-close");
+const loginCancel = loginModalBox.querySelector(".login-cancel");
+
+// Відкрити
+openLoginModal.onclick = function() {
+  loginModalBox.style.display = "block";
+}
+
+// Закрити по хрестику
+loginClose.onclick = function() {
+  loginModalBox.style.display = "none";
+}
+
+// Закрити по Cancel
+loginCancel.onclick = function() {
+  loginModalBox.style.display = "none";
+}
+
+// Закрити по кліку поза вікном
+window.onclick = function(e) {
+  if (e.target == loginModalBox) {
+    loginModalBox.style.display = "none";
+  }
+}
+</script>
+
 </body>
 </html>
