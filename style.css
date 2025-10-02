@@ -1,0 +1,385 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  width: 1400px;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  height: 97px;
+}
+
+/* Ліва частина */
+.left {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.logo {
+  width: 52px; /* можна підлаштувати */
+  height: 52px;
+}
+
+nav {
+  display: flex;
+  gap: 27px;
+}
+
+nav a {
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+letter-spacing: 0%;
+color: #292524;
+text-decoration: none;
+}
+
+nav a {
+  position: relative;
+  display: inline-block;  /* дуже важливо — щоб ширина була по тексту */
+
+  font-weight: 600;
+  text-decoration: none;
+}
+
+nav a.active {
+  color: #9b0000;
+}
+
+nav a.active::before {
+  content: "";
+  position: absolute;
+  top: -24px;             /* рисочка зверху */
+  left: 0;            /* починається від початку тексту */
+  width: 100%;        /* ширина рівно по тексту */
+  height: 4px;        /* товщина лінії */
+  background: #9b0000;
+  border-radius: 2px; /* заокруглення країв */
+}
+
+/* Права частина */
+.right {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.icon {
+  position: relative;
+  cursor: pointer;
+}
+
+.icon img {
+  width: 32px;
+  height: auto;
+  display: block;
+}
+
+/* бейджик на корзині */
+.cart-badge {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  background: #9b0000;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 50%;
+  padding: 2px 6px;
+}
+
+
+/* Hero  */
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 432px; /* підбери висоту */
+  background: url("./img/Background.png") center/cover no-repeat; /* твоє фото */
+ display: flex
+;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  clip-path: polygon(60% 0, 100% 0, 100% 100%, 40% 100%);
+}
+
+.overlay {
+  position: relative;
+  z-index: 2;
+  width: 745px;
+  height: 214px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 10px 10px;
+  text-align: center;
+}
+
+.overlay .date {
+font-family: "Lora";
+font-weight: 700;
+font-size: 22px;
+line-height: 8px;
+letter-spacing: 1px;
+text-align: center;
+color: #1C1917;
+}
+
+.overlay h1 {
+font-family: "Lora";
+font-weight: 700;
+font-size: 32px;
+line-height: 42px;
+letter-spacing: 1px;
+text-align: center;
+color: #8C0E18;
+}
+
+.overlay .subtext {
+font-family: "Roboto";
+font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+letter-spacing: 1px;
+color: #1C1917;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+     justify-content: space-between;
+    width: 775px;
+}
+
+.btn {
+  padding: 16px 17px;
+  border-radius: 100px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn.red {
+  background:#8C0E18CC;
+  color: #fff;
+    width: 230px;
+    display: flex
+;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-family: Roboto;
+font-weight: 300;
+font-style: Light;
+font-size: 22px;
+line-height: 26px;
+letter-spacing: 1px;
+vertical-align: middle;
+
+}
+
+.btn.red:hover {
+  background: #700000;
+}
+
+.btn.white {
+   display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+  color: #ffffff;
+  font-family: "Roboto";
+font-weight: 700;
+font-size: 18px;
+line-height: 22px;
+letter-spacing: 1px;
+cursor: pointer;
+}
+
+/* tiket */
+
+.tickets {
+  max-width: 1392px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.ticket-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(164px, 1fr));
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.ticket {
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+}
+
+.ticket img {
+  width: 100%;
+  display: block;
+  border-radius: 6px;
+  transition: transform 0.2s ease;
+}
+
+.ticket:hover img {
+  transform: scale(1.05);
+}
+
+.ticket:hover {
+  background: #e6c9c9; /* рожевий фон при hover */
+}
+
+
+.ticket .number {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  font-weight: bold;
+  color: #7b0000;
+  pointer-events: none;
+}
+
+.ticket::after {
+  content: "Add to cart";
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #9b0000;
+  color: #fff;
+  font-size: 14px;
+  padding: 5px 12px;
+  border-radius: 4px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+}
+
+.ticket:hover::after {
+  opacity: 1;
+}
+
+.load-more {
+  background: #fff;
+  border: 1px solid #999;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.load-more:hover {
+  background: #f2f2f2;
+}
+
+
+/* футер */
+
+.footer {
+  background: #8b0d17; /* темно-червоний як на фото */
+  color: #fff;
+  padding: 30px 20px;
+  font-size: 14px;
+  height: 168px;
+}
+
+.footer-container {
+  max-width: 1400px;
+  margin-top: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.footer-left {
+    flex: 1;
+    min-width: 250px;
+    display: flex
+;
+    align-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-logo {
+  width: 72px;
+  margin-bottom: 10px;
+}
+
+.footer-left1 p {
+  margin: 6px 0;
+  font-family: "Roboto";
+font-weight: 400;
+font-style: Regular;
+font-size: 16px;
+line-height: 18px;
+letter-spacing: 1px;
+
+}
+
+.footer-right {
+  display: flex;
+  gap: 40px;
+  flex: 1;
+ justify-content: flex-end;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.footer-col a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+  font-family: "Roboto";
+font-weight: 400;
+font-size: 16px;
+line-height: 18px;
+letter-spacing: 1px;
+
+}
+
+.footer-col a:hover {
+  text-decoration: underline;
+}
+
+.footer-social {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-left: 40px;
+  flex-direction: column;
+}
+
+.footer-social img {
+  width: 24px;
+  height: 24px;
+  transition: 0.3s;
+  color: #FAFAF9;
+}
+
+.footer-social img:hover {
+  opacity: 0.7;
+}
+
