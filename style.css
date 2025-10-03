@@ -448,7 +448,7 @@ letter-spacing: 1px;
 }
 
 .login-modal-body input {
- width: 565px;
+ width: 565px!important;
     padding: 8px;
     border: 1px solid #ddd;
     font-size: 14px;
@@ -595,3 +595,406 @@ letter-spacing: 1px;
   opacity: 0.7;
 }
 
+
+
+.header-bar{
+background:#8C0E18; /* темно-червоний як на зображенні */
+color:#fff;
+font-family: "Roboto";
+font-weight: 300;
+font-size: 32px;
+line-height: 38px;
+letter-spacing: 1px;
+padding: 0 124px ;
+height: 86px;
+display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+
+.page-wrapper {
+  display: flex;
+  background: #f8f8f8;
+  border-radius: 8px;
+  overflow: hidden;
+  justify-content: flex-end;
+    gap: 40px;
+}
+
+/* Ліва секція */
+.form-section {
+ width: 675px;
+    /* padding: 25px; */
+    padding-top: 48px;
+}
+
+.section-title {
+font-family: "Lora";
+font-weight: 700;
+font-size: 28px;
+line-height: 16px;
+letter-spacing: 1px;
+
+}
+
+.section-subtitle {
+font-family: "Lora";
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+}
+
+.user-info {
+  margin-bottom: 20px;
+font-weight: 400;
+line-height: 18px;
+letter-spacing: 0%;
+
+}
+.user-info .label {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.form-block {
+  margin-bottom: 25px;
+  margin-top: 32px;
+  border-top: 1px solid #D6D3D1;
+}
+
+.form-block h3 {
+  margin-top: 32px;
+font-weight: 700;
+font-size: 18px;
+line-height: 22px;
+letter-spacing: 0%;
+
+}
+
+label {
+  display: block;
+  margin: 8px 0 5px;
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0%;
+
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 660px;
+  padding: 8px;
+  height: 30px;
+  border: 1px solid #E7E5E4;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.input-row {
+  display: flex;
+  gap: 10px;
+}
+.input-row input {
+  flex: 1;
+}
+
+.note {
+font-family: "Lora";
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0%;
+
+}
+
+.input-row {
+  display: flex;
+justify-content: flex-start;
+    gap: 30px;
+}
+
+.form-field {
+ width: 200px;
+}
+
+.form-field label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.form-field .required {
+  color: red;
+}
+
+.form-field input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+
+.payment-method h3 {
+font-weight: 700;
+font-size: 18px;
+line-height: 8px;
+letter-spacing: 0%;
+
+}
+
+.payment-method .note {
+font-family: "Lora";
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0%;
+
+}
+
+.radio-option {
+display: flex;
+    flex-direction: row;
+    margin-bottom: 12px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.radio-option1 {
+display: flex;
+    flex-direction: row;
+    margin-bottom: 12px;
+    font-size: 14px;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.radio-option input {
+  margin-right: 8px;
+  color: #FFFFFF;
+  width: 24px;
+  border: 1px solid #E7E5E4;
+}
+
+.radio-option1 input {
+  color: #FFFFFF;
+  width: 24px;
+  border: 1px solid #E7E5E4;
+}
+
+.radio-option span {
+font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+letter-spacing: 0%;
+
+}
+
+.radio-option1 span {
+font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+letter-spacing: 0%;
+
+}
+
+.fee-note {
+  color: #78716C;
+     margin-left: -115px;
+    margin-top: 24px;
+    margin-bottom: -18px;
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0%;
+
+}
+
+
+/* Права секція */
+.cart-section {
+    width: 580px;
+  padding: 25px;
+  height: 336px;
+  background: #F6ECED;
+}
+
+.cart-items {
+  margin-top: 15px;
+}
+
+.ticket-card {
+  background: #fff;
+  border: 1px dashed #bbb;
+  border-radius: 6px;
+  padding: 12px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+}
+
+.remove-btn {
+  position: absolute;
+  top: 6px;
+  right: 8px;
+  cursor: pointer;
+  color: red;
+}
+
+.add-card {
+  background: #f0f0f0;
+  cursor: pointer;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+  .page-wrapper {
+    flex-direction: column;
+  }
+  .form-section {
+    border-right: none;
+    border-bottom: 1px solid #e0e0e0;
+  }
+}
+
+
+
+.terms-block {
+  margin-top: 45px;
+  padding-top: 15px;
+  border-top: 1px solid #ddd;
+}
+
+.terms-block h3 {
+  margin: 0 0 8px;
+      margin-top: 15px;
+font-weight: 700;
+font-style: Bold;
+font-size: 18px;
+line-height: 22px;
+letter-spacing: 0%;
+
+
+}
+
+.terms-block p {
+font-family: "Lora";
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0%;
+
+  margin-bottom: 20px;
+}
+
+.terms-block a {
+  color: #8C0E18;
+  text-decoration: none;
+font-family: "Lora";
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0%;
+
+}
+
+.amount-table {
+
+  border: 1px solid #E7E5E4;
+  margin-bottom: 20px;
+  background: #FFFFFF;
+  padding: 24px;
+}
+
+.table-header,
+.table-total {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  font-size: 14px;
+}
+
+
+.table-row{
+font-family: "Lora";
+font-weight: 700;
+font-style: Bold;
+font-size: 20px;
+line-height: 26px;
+letter-spacing: 0%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #D6D3D1;
+    padding:  8px 0;
+}
+
+.span1{
+
+font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+letter-spacing: 0%;
+
+}
+
+
+.table-header {
+font-weight: 700;
+font-style: Bold;
+font-size: 18px;
+line-height: 22px;
+letter-spacing: 0%;
+
+}
+
+.table-total {
+  margin-top: 5px;
+  font-size: 15px;
+  display: flex
+;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.table-total strong {
+font-weight: 700;
+font-style: Bold;
+font-size: 18px;
+leading-trim: NONE;
+line-height: 22px;
+letter-spacing: 0%;
+}
+
+strong1 {
+font-family: Roboto;
+font-weight: 400;
+font-style: Regular;
+font-size: 18px;
+line-height: 22px;
+letter-spacing: 0%;
+
+}
+
+.purchase-btn {
+  text-align: right;
+}
+
+.purchase-btn button {
+  background: #c47b7b;
+  border: none;
+  width: 200px;
+  height: 46px;
+  padding: 12px 24px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  opacity: 0.7;
+  margin-bottom:  50px;
+
+}
