@@ -13,7 +13,7 @@
 
       <!-- Навігація -->
       <nav>
-        <a href="index.html">Heilsuefling</a>
+        <a href="#">Heilsuefling</a>
         <a href="#">SÍBS blaðið</a>
         <a href="#">Greinasafn</a>
         <a href="#" class="active">Happdrættið</a>
@@ -27,6 +27,392 @@
   <img src="./img/SIBS - Top nav item.svg" alt="Search">
 </div>
 
+
+
+
+<!-- Іконка корзина -->
+<a href="card.html" class="icon">
+  <img src="./img/SIBS - Icons.svg" alt="Cart">
+  <span class="cart-badge">2</span>
+</a>
+
+
+<!-- Іконка профіль -->
+<div class="icon">
+  <img src="./img/SIBS - Top nav item (1).svg" alt="User">
+</div>
+
+   
+
+   
+    </div>
+  </header>
+
+  <section class="hero">
+  <div class="overlay">
+    <p class="date">Næsti útdráttur 9. september</p>
+    <h1>
+      Happdrætti SÍBS styður Reykjalund<br>
+      Reykjalundur styður þúsundir til sjálfshjálpar
+    </h1>
+    <p class="subtext">
+  Dregnar eru út 92 milljónir á mánuði eða samtals 1.104 milljónir á árun 2025. 
+  <a href="https://example.com/info" target="_blank" class="info">
+    <img src="./img/SIBS - Icons (1).svg" alt="Info">
+  </a>
+</p>
+
+  </div>
+  <div class="buttons">
+<!-- Іконка пошук -->
+<a href="#" class="btn red" id="openSearch">
+  <img src="./img/SIBS - Icons (2).svg" alt="Search"> Laus miðanúmer
+</a>
+
+<!-- Модальне вікно -->
+<div id="searchModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <input type="text" placeholder="Leita..." class="search-input"/>
+
+    <div class="modal-footer">
+      <a href="#" class="link-left">Purchase ticket →</a>
+      <a href="#" class="link-right">Find a winning →</a>
+    </div>
+  </div>
+</div>
+
+<style>
+/* Фон */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(60, 60, 60, 0.8);
+  backdrop-filter: blur(4px);
+}
+
+/* Контейнер */
+.modal-content {
+  margin: 15% auto;
+  width: 640px;
+  gap: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.close {
+    position: absolute;
+    right: 0px;
+    top: -50px;
+    font-size: 40px;
+    cursor: pointer;
+    color: #fff;
+    width: 22px;
+    height: 22px;
+    text-align: center;
+    line-height: 22px;
+}
+
+/* Інпут */
+.search-input {
+  width: 620px;
+  height: 20px;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
+  outline: none;
+}
+
+/* Нижній блок */
+.modal-footer {
+    width: 620px;
+    height: 36px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: #f7f7f7;
+    align-content: center;
+    align-items: center;
+}
+
+.modal-footer a {
+font-weight: 400;
+font-size: 16px;
+line-height: 18px;
+letter-spacing: 1px;
+color: #8C0E18;
+text-decoration: none;
+}
+</style>
+
+<script>
+const modal = document.getElementById("searchModal");
+const openBtn = document.getElementById("openSearch");
+const closeBtn = document.querySelector(".close");
+
+openBtn.onclick = function(e) {
+  e.preventDefault();
+  modal.style.display = "block";
+}
+
+closeBtn.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(e) {
+  if (e.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+
+  
+ <a href="javascript:void(0)" 
+   class="btn white search-btn">
+   Leita að vinningi 
+   <img src="./img/SIBS - Icons (3).svg" alt="Arrow">
+</a>
+
+<style>
+.search-btn {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  color: #333;
+
+  /* ВАЖЛИВО щоб було клікабельним */
+  position: relative;
+  z-index: 9999;
+  pointer-events: auto;
+}
+</style>
+
+</div>
+
+</section>
+
+
+<section class="tickets">
+  <div class="ticket-grid">
+    <div class="ticket">
+      <img src="./img/SIBS - Ticket final.svg" alt="78">
+
+    </div>
+     <div class="ticket">
+      <img src="./tiket/SIBS - Ticket final.svg" alt="78">
+  
+    </div>
+     <div class="ticket">
+      <img src="./tiket/SIBS - Ticket final (1).svg" alt="78">
+  
+    </div>
+     <div class="ticket">
+      <img src="./tiket/SIBS - Ticket final (2).svg" alt="78">
+  
+    </div>
+     <div class="ticket">
+      <img src="./tiket/SIBS - Ticket final (3).svg" alt="78">
+    
+    </div>
+     <div class="ticket">
+      <img src="./tiket/SIBS - Ticket final (4).svg" alt="78">
+  
+    </div>
+     <div class="ticket">
+      <img src="./tiket/SIBS - Ticket final (5).svg" alt="78">
+  
+    </div>
+   
+  </div>
+    <div class="ticket-grid">
+    <div class="ticket">
+      <img src="./1/SIBS - Ticket final.svg" alt="78">
+
+    </div>
+     <div class="ticket">
+      <img src="./1/SIBS - Ticket final (1).svg" alt="78">
+  
+    </div>
+     <div class="ticket">
+      <img src="./1/SIBS - Ticket final (2).svg" alt="78">
+  
+    </div>
+     <div class="ticket">
+      <img src="./1/SIBS - Ticket final (3).svg" alt="78">
+  
+    </div>
+     <div class="ticket">
+      <img src="./1/SIBS - Ticket final (4).svg" alt="78">
+    
+    </div>
+     <div class="ticket">
+      <img src="./1/SIBS - Ticket final (5).svg" alt="78">
+  
+    </div>
+     <div class="ticket">
+      <img src="./1/SIBS - Ticket final (6).svg" alt="78">
+  
+    </div>
+   
+  </div>
+    <div class="ticket-grid">
+    <div class="ticket">
+      <img src="./2/SIBS - Ticket final.svg" alt="78">
+
+    </div>
+     <div class="ticket">
+      <img src="./2/SIBS - Ticket final (1).svg" alt="78">
+  
+    </div>
+     <div class="ticket">
+      <img src="./2/SIBS - Ticket final (2).svg" alt="78">
+  
+    </div>
+     <div class="ticket">
+      <img src="./2/SIBS - Ticket final (3).svg" alt="78">
+  
+    </div>
+     <div class="ticket">
+      <img src="./2/SIBS - Ticket final (4).svg" alt="78">
+    
+    </div>
+     <div class="ticket">
+      <img src="./2/SIBS - Ticket final (5).svg" alt="78">
+  
+    </div>
+     <div class="ticket">
+      <img src="./2/SIBS - Ticket final (6).svg" alt="78">
+  
+    </div>
+   
+  </div>
+    <div class="ticket-grid">
+    <div class="ticket">
+      <img src="./2/Frame 1000005795.svg" alt="78">
+
+    </div>
+     <div class="ticket">
+      <img src="./2/SIBS - Ticket final (7).svg" alt="78">
+  
+    </div>
+     <div class="ticket">
+      <img src="./2/SIBS - Ticket final (8).svg" alt="78">
+  
+    </div>
+     <div class="ticket">
+      <img src="./2/SIBS - Ticket final (9).svg" alt="78">
+  
+    </div>
+     <div class="ticket">
+      <img src="./2/SIBS - Ticket final (10).svg" alt="78">
+    
+    </div>
+     <div class="ticket">
+      <img src="./2/SIBS - Ticket final (11).svg" alt="78">
+  
+    </div>
+     <div class="ticket">
+      <img src="./2/SIBS - Ticket final (12).svg" alt="78">
+  
+    </div>
+   
+  </div>
+    <div class="ticket-grid">
+    <div class="ticket">
+      <img src="./2/SIBS - Ticket final (13).svg" alt="78">
+
+    </div>
+     <div class="ticket">
+      <img src="./2/SIBS - Ticket final (14).svg" alt="78">
+  
+    </div>
+     <div class="ticket">
+      <img src="./2/SIBS - Ticket final (15).svg" alt="78">
+  
+    </div>
+     <div class="ticket">
+      <img src="./2/SIBS - Ticket final (16).svg" alt="78">
+  
+    </div>
+     <div class="ticket">
+      <img src="./2/SIBS - Ticket final (17).svg" alt="78">
+    
+    </div>
+     <div class="ticket">
+      <img src="./2/SIBS - Ticket final (18).svg" alt="78">
+  
+    </div>
+     <div class="ticket">
+      <img src="./2/SIBS - Ticket final (19).svg" alt="78">
+  
+    </div>
+   
+  </div>
+
+  <button class="load-more">Load more tickets</button>
+</section>
+
+
+<footer class="footer">
+  <div class="footer-container">
+    
+    <!-- Ліва частина -->
+    <div class="footer-left">
+      <img src="./img/Layer_1-2.svg" alt="Logo" class="footer-logo">
+      <div class="footer-left1">
+      <p>Borgartún 28a | 105 Reykjavík</p>
+      <p>+354 560 4800 | sibs@sibs.is</p>
+      <p>mán–fös: 9:00–15:00</p>
+      </div>
+    </div>
+
+    <!-- Права частина -->
+    <div class="footer-right">
+      <div class="footer-col">
+        <a href="#">SÍBS blaðið</a>
+        <a href="#">Greinar</a>
+        <a href="#">Heilsuefling</a>
+      </div>
+      <div class="footer-col">
+        <a href="#">Um SÍBS</a>
+        <a href="#">Skilmálar</a>
+        <a href="#">Persónuvernd</a>
+      </div>
+    </div>
+
+    <!-- Соцмережі -->
+    <div class="footer-social">
+      <a href="#"><img src="./img/SIBS - Icons (4).svg" alt="Facebook"></a>
+      <a href="#"><img src="./img/SIBS - Icons (5).svg" alt="Instagram"></a>
+    </div>
+
+  </div>
+</footer>
+
+<script >
+  const icons = document.querySelectorAll('.icon');
+
+icons.forEach(icon => {
+  icon.addEventListener('click', function () {
+    // зняти active з усіх
+    icons.forEach(i => i.classList.remove('active'));
+    // додати active на поточну
+    this.classList.add('active');
+  });
+});
+
+</script>
 
 <!-- Модальне вікно Логін -->
 <div id="loginModalBox" class="login-modal">
@@ -86,76 +472,5 @@ window.onclick = function(e) {
 }
 </script>
 
-
-<!-- Іконка корзина -->
-<a href="card.html" class="icon">
-  <img src="./img/SIBS - Icons.svg" alt="Cart">
-  <span class="cart-badge">2</span>
-</a>
-
-
-<!-- Іконка профіль -->
-<div class="icon">
-  <img src="./img/SIBS - Top nav item (1).svg" alt="User">
-</div>
-
-   
-
-   
-    </div>
-  </header>
- 
-     
-
-
-<footer class="footer">
-  <div class="footer-container">
-    
-    <!-- Ліва частина -->
-    <div class="footer-left">
-      <img src="./img/Layer_1-2.svg" alt="Logo" class="footer-logo">
-      <div class="footer-left1">
-      <p>Borgartún 28a | 105 Reykjavík</p>
-      <p>+354 560 4800 | sibs@sibs.is</p>
-      <p>mán–fös: 9:00–15:00</p>
-      </div>
-    </div>
-
-    <!-- Права частина -->
-    <div class="footer-right">
-      <div class="footer-col">
-        <a href="#">SÍBS blaðið</a>
-        <a href="#">Greinar</a>
-        <a href="#">Heilsuefling</a>
-      </div>
-      <div class="footer-col">
-        <a href="#">Um SÍBS</a>
-        <a href="#">Skilmálar</a>
-        <a href="#">Persónuvernd</a>
-      </div>
-    </div>
-
-    <!-- Соцмережі -->
-    <div class="footer-social">
-      <a href="#"><img src="./img/SIBS - Icons (4).svg" alt="Facebook"></a>
-      <a href="#"><img src="./img/SIBS - Icons (5).svg" alt="Instagram"></a>
-    </div>
-
-  </div>
-</footer>
-
-<script >
-  const icons = document.querySelectorAll('.icon');
-
-icons.forEach(icon => {
-  icon.addEventListener('click', function () {
-    // зняти active з усіх
-    icons.forEach(i => i.classList.remove('active'));
-    // додати active на поточну
-    this.classList.add('active');
-  });
-});
-
-</script>
 </body>
 </html>
