@@ -153,26 +153,7 @@ text-decoration: none;
 }
 </style>
 
-<script>
-const modal = document.getElementById("searchModal");
-const openBtn = document.getElementById("openSearch");
-const closeBtn = document.querySelector(".close");
 
-openBtn.onclick = function(e) {
-  e.preventDefault();
-  modal.style.display = "block";
-}
-
-closeBtn.onclick = function() {
-  modal.style.display = "none";
-}
-
-window.onclick = function(e) {
-  if (e.target == modal) {
-    modal.style.display = "none";
-  }
-}
-</script>
 
 
   
@@ -400,19 +381,7 @@ window.onclick = function(e) {
   </div>
 </footer>
 
-<script >
-  const icons = document.querySelectorAll('.icon');
 
-icons.forEach(icon => {
-  icon.addEventListener('click', function () {
-    // зняти active з усіх
-    icons.forEach(i => i.classList.remove('active'));
-    // додати active на поточну
-    this.classList.add('active');
-  });
-});
-
-</script>
 
 <!-- Модальне вікно Логін -->
 <div id="loginModalBox" class="login-modal">
@@ -443,34 +412,8 @@ icons.forEach(icon => {
 
 
 
-<script>
-const loginModalBox = document.getElementById("loginModalBox");
-const openLoginModal = document.getElementById("openLoginModal");
-const loginClose = loginModalBox.querySelector(".login-close");
-const loginCancel = loginModalBox.querySelector(".login-cancel");
-
-// Відкрити
-openLoginModal.onclick = function() {
-  loginModalBox.style.display = "block";
-}
-
-// Закрити по хрестику
-loginClose.onclick = function() {
-  loginModalBox.style.display = "none";
-}
-
-// Закрити по Cancel
-loginCancel.onclick = function() {
-  loginModalBox.style.display = "none";
-}
-
-// Закрити по кліку поза вікном
-window.onclick = function(e) {
-  if (e.target == loginModalBox) {
-    loginModalBox.style.display = "none";
-  }
-}
-</script>
-
+<script src="./js/modal.js"></script>
+<script src="./js/modal1.js"></script>
+<script src="./js/modal2.js"></script>
 </body>
 </html>
