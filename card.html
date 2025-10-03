@@ -34,7 +34,7 @@
 </a>
 
 <!-- Іконка профіль -->
-<div class="icon">
+<div class="icon winning-trigger">
   <img src="./img/SIBS - Top nav item (1).svg" alt="User">
 </div>
     </div>
@@ -290,9 +290,47 @@ Cart
 </div>
 
 
+<!-- Winning Modal -->
+<div id="winningModal" class="winning-modal">
+  <div class="winning-modal-content">
+    <div class="winning-modal-header">
+      <h2>Find a winning</h2>
+      <span class="winning-close-btn">&times;</span>
+    </div>
+
+    <p class="winning-intro">
+      Here you can check if your ticket won or view the latest list of winning numbers.
+    </p>
+
+    <div class="winning-search-bar">
+      <label class="winning-last">Last winnings →</label>
+      <div class="winning-search-input">
+        <input type="text" placeholder="2645">
+        <button class="winning-search-btn">Search</button>
+      </div>
+    </div>
+
+    <h3 class="winning-results-title">Winnings on ticket number 2645</h3>
+    <div class="winning-results-table">
+      <div class="winning-row"><span>Feb, 2024</span><span>25.000 kr.</span></div>
+      <div class="winning-row"><span>Jul, 2023</span><span>30.000 kr.</span></div>
+      <div class="winning-row"><span>Sept, 2022</span><span>30.000 kr.</span></div>
+      <div class="winning-row"><span>Oct, 2018</span><span>20.000 kr.</span></div>
+      <div class="winning-row"><span>Jul, 2018</span><span>20.000 kr.</span></div>
+      <div class="winning-row"><span>Aug, 2015</span><span>15.000 kr.</span></div>
+      <div class="winning-row"><span>Nov, 2011</span><span>15.000 kr.</span></div>
+      <div class="winning-row"><span>Nov, 2010</span><span>5.000 kr.</span></div>
+    </div>
+
+    <div class="winning-modal-footer">
+      <button class="winning-close-footer">Close</button>
+    </div>
+  </div>
+</div>
 
 <script src="./js/modal.js"></script>
 <script src="./js/modal1.js"></script>
 <script src="./js/modal2.js"></script>
+<script src="./js/modal3.js"></script>
 </body>
 </html>

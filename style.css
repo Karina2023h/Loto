@@ -4,7 +4,6 @@ body {
 }
 
 header {
-  width: 1400px;
   max-width: 100%;
   margin: 0 auto;
   display: flex;
@@ -997,4 +996,186 @@ letter-spacing: 0%;
   opacity: 0.7;
   margin-bottom:  50px;
 
+}
+
+
+
+/* Overlay */
+.winning-modal {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+}
+
+/* Content — панель справа */
+.winning-modal-content {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 640px;
+  max-width: 95%;
+ background: #f3f3f3;
+  border-left: 1px solid #ddd;
+  overflow-y: auto;
+  animation: winningSlideIn 0.3s ease;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.winning-modal-header {
+  background: #8b1c1c;
+  color: #fff;
+  padding: 14px 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  height: 40px;
+}
+.winning-modal-header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 80px;      /* ширина трикутника */
+  height: 100%;
+  background: #fff; /* колір вирізу */
+  clip-path: polygon(100% 0, 100% 116%, 0 100%);
+}
+
+
+
+.winning-modal-header h2 {
+font-weight: 300;
+font-style: Light;
+font-size: 28px;
+line-height: 32px;
+letter-spacing: 0%;
+
+}
+
+.winning-close-btn {
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Intro text */
+.winning-intro {
+font-family: "Lora";
+font-weight: 400;
+font-size: 18px;
+line-height: 28px;
+letter-spacing: 0%;
+padding: 24px;
+}
+
+/* Search bar */
+.winning-search-bar {
+  padding: 0 20px 15px;
+}
+
+.winning-last {
+  display: block;
+  color: #a71f1f;
+  font-size: 13px;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.winning-search-input {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.winning-search-input input {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.winning-search-btn {
+  background: #b43a3a;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  height: 48px;
+    width: 105px;
+}
+
+/* Results title */
+.winning-results-title {
+font-family: "Lora";
+font-weight: 700;
+font-style: Bold;
+font-size: 24px;
+line-height: 30px;
+letter-spacing: 0%;
+padding-left: 24px;
+  color: #222;
+}
+
+/* Table */
+.winning-results-table {
+  padding: 0 20px;
+}
+
+.winning-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  font-size: 18px;
+border-bottom: 1px solid #d4d4d4;
+}
+
+.winning-row:last-child {
+  border-bottom: none;
+}
+
+.winning-row span:first-child {
+ font-family: Roboto;
+font-weight: 700;
+font-style: Bold;
+font-size: 18px;
+line-height: 22px;
+letter-spacing: 0%;
+
+}
+
+/* Footer */
+.winning-modal-footer {
+ padding-top: 70px;
+ padding-right: 24px;
+ padding-left: 24px;
+    border-top: 1px solid #d0d0d0;
+    text-align: center;
+}
+
+.winning-modal-footer button {
+  width: 100%;
+  padding: 12px 0;
+  border: 1px solid #ccc;
+  background: #f9f9f9;
+  color: #333;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+/* Slide animation */
+@keyframes winningSlideIn {
+  from { right: -480px; opacity: 0; }
+  to { right: 0; opacity: 1; }
 }
