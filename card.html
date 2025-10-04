@@ -265,28 +265,36 @@ Cart
 <!-- Модальне вікно Логін -->
 <div id="loginModalBox" class="login-modal">
   <div class="login-modal-content">
-    <!-- Верхній хедер -->
-    <div class="login-modal-header">
-      <div class="login-tabs">
-        <span class="login-tab active">Electric ID</span>
-        <span class="login-tab">Auðkenni app</span>
-      </div>
-      <span class="login-close">&times;</span>
+  <!-- Верхній хедер -->
+  <div class="login-modal-header">
+    <div class="login-tabs">
+      <span class="login-tab active" data-tab="electric">Electric ID</span>
+      <span class="login-tab" data-tab="audkenni">Auðkenni app</span>
     </div>
+    <span class="login-close">×</span>
+  </div>
 
-    <!-- Тіло -->
-    <div class="login-modal-body">
+  <!-- Тіло -->
+  <div class="login-modal-body">
+    <div class="tab-content active" id="electric">
       <h3>Log in using Electric ID</h3>
-      <label for="login-phone">Phone <span style="color:red">*</span></label>
-      <input type="text" id="login-phone" placeholder="622-1540">
+      <label for="login-phone1">Phone <span style="color:red">*</span></label>
+      <input type="text" id="login-phone1" placeholder="622-1540">
     </div>
 
-    <!-- Footer -->
-    <div class="login-modal-footer">
-      <button class="login-btn login-cancel">Cancel</button>
-      <button class="login-btn login-continue">Continue</button>
+    <div class="tab-content" id="audkenni">
+      <h3>Log in using Auðkenni app</h3>
+      <label for="login-phone2">Phone <span style="color:red">*</span></label>
+      <input type="text" id="login-phone2" placeholder="622-1540">
     </div>
   </div>
+
+  <!-- Footer -->
+  <div class="login-modal-footer">
+    <button class="login-btn login-cancel">Cancel</button>
+    <button class="login-btn login-continue">Continue</button>
+  </div>
+</div>
 </div>
 
 

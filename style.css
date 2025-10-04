@@ -1335,3 +1335,96 @@ letter-spacing: 0%;
     padding-top: 48px;
     padding-bottom: 500px;
 }
+
+
+.icones{
+  margin-right: 10px;
+    margin-left: -65px;
+    cursor: pointer;
+}
+
+
+.wrapper1 {
+  max-width: 1392px;
+  margin: auto;
+  margin-top: 30px;
+  padding-bottom: 300px;
+  background-color: #FAFAF9;
+}
+
+/* Верхня частина */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title23 {
+ font-family: "Lora";
+font-weight: 400;
+font-size: 24px;
+leading-trim: NONE;
+line-height: 30px;
+letter-spacing: 0%;
+color: #292524;
+}
+
+.pdf-link {
+font-weight: 700;
+font-style: Bold;
+font-size: 16px;
+leading-trim: NONE;
+line-height: 18px;
+letter-spacing: 0%;
+color: #8C0E18;
+text-decoration: none;
+
+}
+
+.icon232 img{
+margin-bottom: -3px;
+margin-left: 5px;
+}
+
+/* Блоки */
+.block {
+  padding: 15px 0;
+}
+
+.block-label1 {
+font-weight: 700;
+font-style: Bold;
+font-size: 16px;
+leading-trim: NONE;
+line-height: 18px;
+letter-spacing: 0%;
+color: #57534E;
+margin-bottom: 16px;
+    margin-left: 5px;
+}
+
+
+.block-label1 img {
+width: 214px;
+height: 93px;
+}
+
+
+.numbers {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.numbers1 {
+  display: flex;
+  flex-wrap: wrap;
+gap: 8px;
+}
+
+
+.numbers1 img {
+width: 77px;
+    height: 33px;
+}
+
+
