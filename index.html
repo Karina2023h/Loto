@@ -2,12 +2,21 @@
 <html lang="is">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Header Example</title>
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/style-1080.css" media="screen and (max-width: 1080px)">
-<link rel="stylesheet" href="css/style-768.css" media="screen and (max-width: 767px)">
 
+  <!-- Основний стиль -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Для екранів до 1080px -->
+  <link rel="stylesheet" href="css/style-1080.css" media="only screen and (max-width: 1080px)">
+
+  <!-- Для екранів до 768px -->
+  <link rel="stylesheet" href="css/style-768.css" media="only screen and (max-width: 768px)">
+
+    <link rel="stylesheet" href="css/style-375.css" media="only screen and (max-width: 480px)">
 </head>
+
 <body>
   <header>
     <div class="left">
