@@ -17,6 +17,8 @@ header {
 /* Ліва частина */
 .left {
   gap: 12px;
+
+  margin-right: 100px;
 }
 
 .logo {
@@ -953,4 +955,88 @@ top: -53px;
     padding: 6px 6px;
     border-radius: 50%;
     font-weight: bold;
+}
+
+
+/* ===== БУРГЕР МЕНЮ (мобільна версія) ===== */
+
+.mobile-header {
+       max-width: 50px !important;
+        /* text-align: right; */
+        position: relative;
+}
+
+/* Іконка меню */
+.menu-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 26px;
+  height: 20px;
+  cursor: pointer;
+  z-index: 3001;
+}
+
+.menu-icon span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: #2f2f2f;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+/* прихований чекбокс */
+.menu-toggle {
+  display: none;
+}
+
+/* Навігація (спочатку прихована) */
+.mobile-nav {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background: #8C0E18;
+  text-align: center;
+  padding: 20px 0;
+  z-index: 3000;
+}
+
+.mobile-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 10px 0;
+  transition: 0.3s;
+  display: block;
+}
+
+/* Коли меню відкрито */
+.menu-toggle:checked ~ .mobile-nav {
+         display: flex
+;
+        flex-direction: column;
+        position: absolute;
+        width: 270px;
+        left: -199px;
+}
+
+/* Анімація іконки при відкритті */
+.menu-toggle:checked + .menu-icon span:nth-child(1) {
+  transform: rotate(45deg) translateY(8px);
+}
+.menu-toggle:checked + .menu-icon span:nth-child(2) {
+  opacity: 0;
+}
+.menu-toggle:checked + .menu-icon span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-8px);
+}
+
+/* Показуємо бургер лише на мобільних */
+@media (min-width: 769px) {
+ 
 }

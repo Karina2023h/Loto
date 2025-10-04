@@ -819,6 +819,10 @@ letter-spacing: 0%;
 }
 
 
+ .mobile-header {
+    display: none;
+  }
+
 /* Права секція */
 .cart-section {
     width: 675px;

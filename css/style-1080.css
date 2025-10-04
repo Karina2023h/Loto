@@ -1198,3 +1198,8 @@ input[type="email"] {
     padding-bottom: 25px;
     padding-top: 20px;
 }
+
+
+ .mobile-header {
+    display: none;
+  }

@@ -95,6 +95,10 @@ bottom: 15px;
 }
 
 
+ .mobile-header {
+    display: none;
+  }
+
 /* Hero  */
 
 .hero {
