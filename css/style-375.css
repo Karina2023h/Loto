@@ -1036,7 +1036,8 @@ top: -53px;
   transform: rotate(-45deg) translateY(-8px);
 }
 
-/* Показуємо бургер лише на мобільних */
-@media (min-width: 769px) {
- 
-}
+
+  .mobile-header {
+    display: block;
+            margin-top: 35px;
+  }
