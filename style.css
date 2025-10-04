@@ -823,8 +823,58 @@ letter-spacing: 0%;
   background: #F6ECED;
 }
 
+
+/* Права секція */
+.cart-section1 {
+    width: 580px;
+  padding: 25px;
+  height: 336px;
+}
+
+/* Права секція */
+.cart-section1 h1 {
+font-family: "Lora";
+font-weight: 700;
+font-style: Bold;
+font-size: 29px;
+line-height: 36px;
+letter-spacing: 1px;
+    margin-top: 38px;
+
+}
+
+.cart-items1 {
+    display: grid
+;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-top: 20px;
+}
+
+
 .cart-items {
   margin-top: 15px;
+}
+
+.remove-btn2 {
+    position: relative;
+    top: -98px;
+    right: 0px;
+    font-size: 30px;
+    color: #b00;
+    cursor: pointer;
+}
+
+.ticket-status {
+    position: absolute;
+    bottom: -45px;
+    /* right: 11px; */
+    background: #7a0d0d;
+    color: #fff;
+    font-size: 12px;
+    padding: 6px 12px;
+    border-radius: 12px;
+    margin-left: 16px;
 }
 
 .ticket-card {
@@ -849,6 +899,54 @@ letter-spacing: 0%;
 .add-card {
   background: #f0f0f0;
   cursor: pointer;
+}
+
+
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.login-tab {
+  cursor: pointer;
+  padding: 8px 15px;
+  color: #ffffff;
+}
+
+.login-tab.active {
+  color: #fff;
+}
+
+
+.login-tabs {
+  display: flex;
+}
+
+.login-tab {
+  cursor: pointer;
+  padding: 10px 20px;
+  color: #fff;
+  position: relative;
+  font-weight: normal;
+  transition: 0.3s;
+}
+
+.login-tab:not(.active) {
+  opacity: 0.7; /* неактивні світліші */
+}
+/* біла риска під активним текстом, але на червоному фоні */
+.login-tab.active::after {
+content: "";
+    position: absolute;
+    left: 12%;
+    bottom: 10px;
+    width: 75%;
+    height: 4px;
+    background: #fff;
 }
 
 /* Адаптивність */
@@ -1178,4 +1276,62 @@ letter-spacing: 0%;
 @keyframes winningSlideIn {
   from { right: -480px; opacity: 0; }
   to { right: 0; opacity: 1; }
+}
+
+.bank-info{
+    display: flex
+;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.form-block1 {
+  margin-bottom: 25px;
+  margin-top: 32px;
+  border-top: 1px solid #D6D3D1;
+}
+
+.form-block1 h3 {
+  margin-top: 32px;
+  font-family: "Lora";
+font-weight: 700;
+font-size: 22px;
+line-height: 22px;
+letter-spacing: 0%;
+
+}
+
+.bank-details{
+  display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.payment-method1 h3 {
+  margin-top: 32px;
+  font-family: "Lora";
+font-weight: 700;
+font-size: 22px;
+line-height: 22px;
+letter-spacing: 0%;
+
+}
+
+.fee-note1 {
+    color: #78716C;
+    margin-left: -253px;
+    margin-top: 24px;
+    margin-bottom: -18px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0%;
+}
+
+.form-section1 {
+    width: 675px;
+    /* padding: 25px; */
+    padding-top: 48px;
+    padding-bottom: 500px;
 }

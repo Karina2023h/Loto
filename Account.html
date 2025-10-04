@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="is">
+<head>
+  <meta charset="UTF-8">
+  <title>Header Example</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="left">
+      <!-- Лого -->
+      <img src="./img/SIBS - Logo.svg" alt="Logo" class="logo">
+
+      <!-- Навігація -->
+      <nav>
+        <a href="card.html">Heilsuefling</a>
+        <a href="#">SÍBS blaðið</a>
+        <a href="#">Greinasafn</a>
+        <a href="index.html" class="active">Happdrættið</a>
+      </nav>
+    </div>
+
+    <div class="right">
+
+    <!-- Іконка пошук -->
+<div class="icon" id="openLoginModal">
+  <img src="./img/SIBS - Top nav item.svg" alt="Search">
+</div>
+
+<!-- Іконка корзина -->
+<a href="card.html" class="icon">
+  <img src="./img/SIBS - Icons.svg" alt="Cart">
+  <span class="cart-badge">2</span>
+</a>
+
+<!-- Іконка профіль -->
+<div class="icon winning-trigger">
+  <img src="./img/SIBS - Top nav item (1).svg" alt="User">
+</div>
+    </div>
+  </header>
+
+
+  <div class="header-bar">
+My account
+</div>
+<div class="page-wrapper">
+    <!-- Ліва секція -->
+    <section class="form-section1">
+      <h2 class="section-title">Margeir Gunnlaugur Margeirsson</h2>
+
+      <div class="user-info">
+              <p><span class="label">SSN:</span> 220922-2299</p>
+  <p><span class="label">Email:</span> margeir.g.margeirsson@gmail.com ✎</p>
+        <p><span class="label">Phone:</span> 622-1540 ✎</p>
+      </div>
+
+    <div class="form-block1">
+  <h3>Bank account</h3>
+  <div class="bank-info">
+    <img src="./4/SIBS - Bank & CC logos.svg" alt="Landsbankinn logo" class="bank-logo">
+    <div class="bank-details">
+      <strong>Landsbankinn</strong>
+      <span>0101-26-220922 ✎</span>
+    </div>
+  </div>
+</div>
+
+
+    <div class="form-block payment-method1">
+  <h3>Payment method</h3>
+
+  <label class="radio-option">
+    <input type="radio" name="payment">
+    <span>5*** **** **** 9658 ✎</span>
+  </label>
+
+  <label class="radio-option1">
+    <input type="radio" name="payment">
+    <span>Bank account 0101-26-220578</span>
+    <small class="fee-note1">(90 kr. bank fee per ticket)</small>
+
+  </label>
+</div>
+
+
+    </section>
+
+    <!-- Права секція -->
+    <aside class="cart-section1">
+        <h1>My tickets</h1>
+      <div class="cart-items1">
+  <div class="ticket-card1">
+    <img src="./2/SIBS - Ticket final (18).svg" alt="78">
+    <span class="remove-btn2">...</span>
+  </div>
+
+  <div class="ticket-card1">
+      <img src="./tiket/SIBS - Ticket final.svg" alt="78">
+    <span class="remove-btn2">...</span>
+    <span class="badge">x2</span>
+  </div>
+
+  <div class="ticket-card1">
+  <img src="./tiket/SIBS - Ticket final (1).svg" alt="78">
+    <span class="remove-btn2">...</span>
+  </div>
+  <span class="ticket-status">Cancelled</span>
+
+  <div class="ticket-card2 ">
+    <img src="./4/SIBS - Ticket final (2).svg" alt="78">
+  </div>
+</div>
+<style>
+    .cart-items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  background: #f9eded;
+  margin-top: 20px;
+}
+
+.section-title1{
+    margin-top: 35px;
+}
+
+.ticket-card1 img{
+    width: 235px;
+}
+
+.ticket-card2 img{
+       margin-top: 5px;
+    width: 220px;
+    margin-left: 7px;
+}
+
+.ticket-card1 img {
+  cursor: pointer;
+}
+
+.ticket-number {
+  display: inline-block;
+}
+
+.remove-btn1 {
+    position: relative;
+    top: -87px;
+    right: 0px;
+    font-size: 30px;
+    color: #b00;
+    cursor: pointer;
+}
+
+.badge {
+     position: relative;
+    top: -105px;
+    right: -195px;
+    background: #2ca34a;
+    color: #fff;
+    font-size: 11px;
+    padding: 6px 6px;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+</style>
+    </aside>
+  </div>
+
+
+<footer class="footer">
+  <div class="footer-container">
+    
+    <!-- Ліва частина -->
+    <div class="footer-left">
+      <img src="./img/Layer_1-2.svg" alt="Logo" class="footer-logo">
+      <div class="footer-left1">
+      <p>Borgartún 28a | 105 Reykjavík</p>
+      <p>+354 560 4800 | sibs@sibs.is</p>
+      <p>mán–fös: 9:00–15:00</p>
+      </div>
+    </div>
+
+    <!-- Права частина -->
+    <div class="footer-right">
+      <div class="footer-col">
+        <a href="#">SÍBS blaðið</a>
+        <a href="#">Greinar</a>
+        <a href="#">Heilsuefling</a>
+      </div>
+      <div class="footer-col">
+        <a href="#">Um SÍBS</a>
+        <a href="#">Skilmálar</a>
+        <a href="#">Persónuvernd</a>
+      </div>
+    </div>
+
+    <!-- Соцмережі -->
+    <div class="footer-social">
+      <a href="#"><img src="./img/SIBS - Icons (4).svg" alt="Facebook"></a>
+      <a href="#"><img src="./img/SIBS - Icons (5).svg" alt="Instagram"></a>
+    </div>
+
+  </div>
+</footer>
+
+
+
+<!-- Модальне вікно Логін -->
+<div id="loginModalBox" class="login-modal">
+  <div class="login-modal-content">
+    <!-- Верхній хедер -->
+    <div class="login-modal-header">
+      <div class="login-tabs">
+        <span class="login-tab active">Electric ID</span>
+        <span class="login-tab">Auðkenni app</span>
+      </div>
+      <span class="login-close">&times;</span>
+    </div>
+
+    <!-- Тіло -->
+    <div class="login-modal-body">
+      <h3>Log in using Electric ID</h3>
+      <label for="login-phone">Phone <span style="color:red">*</span></label>
+      <input type="text" id="login-phone" placeholder="622-1540">
+    </div>
+
+    <!-- Footer -->
+    <div class="login-modal-footer">
+      <button class="login-btn login-cancel">Cancel</button>
+      <button class="login-btn login-continue">Continue</button>
+    </div>
+  </div>
+</div>
+
+
+<!-- Winning Modal -->
+<div id="winningModal" class="winning-modal">
+  <div class="winning-modal-content">
+    <div class="winning-modal-header">
+      <h2>Find a winning</h2>
+      <span class="winning-close-btn">&times;</span>
+    </div>
+
+    <p class="winning-intro">
+      Here you can check if your ticket won or view the latest list of winning numbers.
+    </p>
+
+    <div class="winning-search-bar">
+      <label class="winning-last">Last winnings →</label>
+      <div class="winning-search-input">
+        <input type="text" placeholder="2645">
+        <button class="winning-search-btn">Search</button>
+      </div>
+    </div>
+
+    <h3 class="winning-results-title">Winnings on ticket number 2645</h3>
+    <div class="winning-results-table">
+      <div class="winning-row"><span>Feb, 2024</span><span>25.000 kr.</span></div>
+      <div class="winning-row"><span>Jul, 2023</span><span>30.000 kr.</span></div>
+      <div class="winning-row"><span>Sept, 2022</span><span>30.000 kr.</span></div>
+      <div class="winning-row"><span>Oct, 2018</span><span>20.000 kr.</span></div>
+      <div class="winning-row"><span>Jul, 2018</span><span>20.000 kr.</span></div>
+      <div class="winning-row"><span>Aug, 2015</span><span>15.000 kr.</span></div>
+      <div class="winning-row"><span>Nov, 2011</span><span>15.000 kr.</span></div>
+      <div class="winning-row"><span>Nov, 2010</span><span>5.000 kr.</span></div>
+    </div>
+
+    <div class="winning-modal-footer">
+      <button class="winning-close-footer">Close</button>
+    </div>
+  </div>
+</div>
+
+<script src="./js/modal.js"></script>
+<script src="./js/modal1.js"></script>
+<script src="./js/modal2.js"></script>
+<script src="./js/modal3.js"></script>
+</body>
+</html>

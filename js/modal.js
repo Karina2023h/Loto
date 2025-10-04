@@ -24,3 +24,20 @@ window.onclick = function(e) {
     loginModalBox.style.display = "none";
   }
 }
+
+// --- Вкладки ---
+const loginTabs = loginModalBox.querySelectorAll(".login-tab");
+const tabContents = loginModalBox.querySelectorAll(".tab-content");
+
+loginTabs.forEach(tab => {
+  tab.addEventListener("click", () => {
+    // Прибрати active у всіх вкладок і контенту
+    loginTabs.forEach(t => t.classList.remove("active"));
+    tabContents.forEach(c => c.classList.remove("active"));
+
+    // Додати active вибраній вкладці і відповідному контенту
+    tab.classList.add("active");
+    const target = tab.getAttribute("data-tab");
+    document.getElementById(target).classList.add("active");
+  });
+});
