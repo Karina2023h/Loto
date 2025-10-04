@@ -1,6 +1,8 @@
+
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
+      background-color: #FAFAF9;
 }
 
 header {
@@ -99,7 +101,7 @@ bottom: 15px;
   position: relative;
   width: 100%;
   height: 432px; /* підбери висоту */
-  background: url("./img/Background.png") center/cover no-repeat; /* твоє фото */
+  background: url("../img/Background.png") center/cover no-repeat; /* твоє фото */
  display: flex
 ;
     align-items: center;
@@ -1427,4 +1429,53 @@ width: 77px;
     height: 33px;
 }
 
+ .cart-items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  background: #f9eded;
+  margin-top: 20px;
+}
 
+.section-title1{
+    margin-top: 35px;
+}
+
+.ticket-card1 img{
+    width: 235px;
+}
+
+.ticket-card2 img{
+       margin-top: 5px;
+    width: 220px;
+    margin-left: 7px;
+}
+
+.ticket-card1 img {
+  cursor: pointer;
+}
+
+.ticket-number {
+  display: inline-block;
+}
+
+.remove-btn1 {
+    position: relative;
+    top: -87px;
+    right: 0px;
+    font-size: 30px;
+    color: #b00;
+    cursor: pointer;
+}
+
+.badge {
+     position: relative;
+    top: -105px;
+    right: -195px;
+    background: #2ca34a;
+    color: #fff;
+    font-size: 11px;
+    padding: 6px 6px;
+    border-radius: 50%;
+    font-weight: bold;
+}

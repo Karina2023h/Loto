@@ -1,0 +1,1278 @@
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #FAFAF9;
+}
+
+/* === Header === */
+header {
+     max-width: 768px;
+  flex-direction: column;
+  height: auto;
+  padding: 10px 16px;
+  align-items: center;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.logo {
+  width: 42px;
+  height: 42px;
+}
+
+nav {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+nav a {
+  font-weight: 600;
+  font-size: 14px;
+  color: #292524;
+  text-decoration: none;
+}
+
+nav a.active::before {
+  top: -16px;
+  height: 3px;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.icon img {
+  width: 28px;
+}
+
+/* бейджик */
+.cart-badge {
+  bottom: 10px;
+  left: 10px;
+  font-size: 10px;
+  padding: 2px 5px;
+}
+
+/* === Hero === */
+.hero {
+    position: relative;
+        width: 100%;
+  height: 300px;
+  background: url("../img/Background.png") center/cover no-repeat;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.overlay {
+  width: 90%;
+  height: auto;
+  background: rgba(255, 255, 255, 0.92);
+  padding: 20px;
+}
+
+.overlay .date {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.overlay h1 {
+  font-size: 26px;
+  line-height: 34px;
+}
+
+.overlay .subtext {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.buttons {
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 12px;
+}
+
+.btn {
+  width: 220px;
+  padding: 12px 14px;
+  border-radius: 80px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.btn.red {
+  background: #8C0E18CC;
+  color: #fff;
+}
+
+.btn.red:hover {
+  background: #700000;
+}
+
+/* === Tickets === */
+.tickets {
+  max-width: 100%;
+  margin: 30px auto;
+  text-align: center;
+  padding: 10px 10px 40px;
+}
+
+.ticket-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 у ряд для 768px */
+  gap: 10px;
+  justify-items: center;
+}
+
+.ticket {
+  width: 100%;
+  background: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.ticket img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.load-more {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 16px;
+}
+
+.load-more:hover {
+  background: #f2f2f2;
+}
+
+/* === Footer === */
+.footer {
+  padding: 20px;
+  text-align: center;
+  height: auto;
+}
+
+.footer-container {
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer-left,
+.footer-right {
+  justify-content: center;
+}
+
+.footer-logo {
+  width: 60px;
+}
+
+.footer-col a {
+  font-size: 14px;
+}
+
+/* === Інші дрібні елементи === */
+.header-bar {
+  font-size: 24px;
+  line-height: 30px;
+  padding: 0 20px;
+  height: 70px;
+}
+
+.login-modal-content {
+  width: 90%;
+  height: auto;
+  margin: 15% auto;
+}
+
+/* === ІКОНКИ === */
+.icon {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 6px; /* менше внутрішніх відступів */
+  position: relative;
+  transition: border-top 0.3s;
+  height: 40px; /* нижча висота */
+}
+
+.icon.active {
+  border-top: 3px solid #9b0000; /* тонша червона лінія */
+}
+
+.icon img {
+  width: 26px; /* зменшена іконка */
+  height: auto;
+  display: block;
+}
+
+/* === КНОПКИ === */
+.btn.red:hover {
+  background: #700000;
+}
+
+.btn.white {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; /* центр, а не space-around */
+  gap: 6px; /* менше відстань між елементами */
+  color: #ffffff;
+  font-family: "Roboto";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  padding: 10px 16px;
+}
+
+/* === ТІКЕТИ === */
+.tickets {
+  max-width: 100%;
+  margin: 20px auto;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+
+/* на планшеті робимо 3 у ряд */
+.ticket-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 16px;
+  justify-items: center;
+}
+
+.ticket {
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+  width: 100%;
+}
+
+.ticket img {
+  width: 100%;
+  border-radius: 6px;
+  transition: transform 0.2s ease;
+}
+
+.ticket:hover img {
+  transform: scale(1.03);
+}
+
+.ticket:hover {
+  background: #f1dada;
+}
+
+.ticket .number {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  font-weight: 700;
+  color: #7b0000;
+  pointer-events: none;
+}
+
+.ticket::after {
+  content: "";
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  height: 90%;
+  background: url("./3/Flyout.svg") no-repeat center/contain;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+}
+
+.ticket:hover::after {
+  opacity: 1;
+}
+
+/* === КНОПКА "LOAD MORE" === */
+.load-more {
+  background: #fff;
+  border: 1px solid #999;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 15px;
+}
+
+.load-more:hover {
+  background: #f2f2f2;
+}
+
+/* === МОДАЛЬНЕ ВІКНО ЛОГІН === */
+.login-modal {
+  display: none;
+  position: fixed;
+  z-index: 3000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(80, 80, 80, 0.6);
+  backdrop-filter: blur(3px);
+}
+
+.login-modal-content {
+  background: #f8f8f8;
+  margin: 15% auto;
+  width: 90%; /* адаптивна ширина */
+  max-width: 420px;
+  height: auto;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Хедер модалки */
+.login-modal-header {
+  background: #8C0E18;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  position: relative;
+}
+
+.login-modal-header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 45px;
+  background: #fff;
+  clip-path: polygon(100% -106%, 100% 100%, 0% 100%);
+}
+
+/* Вкладки */
+.login-tabs {
+  display: flex;
+  gap: 10px;
+  height: 100%;
+  align-items: center;
+  z-index: 2;
+}
+
+.login-tab {
+  cursor: pointer;
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  padding: 0 6px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+/* === Активна вкладка === */
+.login-tab.active {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+}
+
+/* === Хрестик праворуч === */
+.login-close {
+  position: absolute;
+  top: 45%;
+  right: 12px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 28px; /* менший */
+  color: #8C0E18;
+  z-index: 3;
+}
+
+/* === Тіло модалки === */
+.login-modal-body {
+  padding: 24px 16px;
+  background-color: #F5F5F4;
+}
+
+.login-modal-body h3 {
+  font-family: "Lora";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #292524;
+  text-align: center;
+}
+
+.login-modal-body label {
+  display: block;
+  margin: 8px 0 3px;
+  color: #333;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+.login-modal-body input {
+  width: 100% !important; /* тепер адаптивно */
+  max-width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  height: 30px;
+  border-radius: 3px;
+}
+
+/* === Footer модалки === */
+.login-modal-footer {
+  display: flex;
+  flex-direction: column; /* вертикально */
+  gap: 10px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+.login-btn {
+  padding: 10px 14px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.login-cancel {
+  background: #FAFAF9;
+  border: 1px solid #ccc;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  height: 44px;
+}
+
+.login-continue {
+  background: #8b0000;
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  height: 44px;
+}
+
+/* === Футер === */
+.footer {
+  background: #8b0d17;
+  color: #fff;
+  padding: 20px 15px;
+  font-size: 13px;
+  height: auto; /* авто для гнучкості */
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 100%;
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-logo {
+  width: 60px;
+}
+
+.footer-left1 p {
+  margin: 4px 0;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.footer-col a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-col a:hover {
+  text-decoration: underline;
+}
+
+.footer-social {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.footer-social img {
+  width: 22px;
+  height: 22px;
+}
+
+/* === Header bar === */
+.header-bar {
+  background: #8C0E18;
+  color: #fff;
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 28px;
+  padding: 0 40px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* === Контент сторінки === */
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  background: #f8f8f8;
+  border-radius: 8px;
+  overflow: hidden;
+  gap: 20px;
+  padding: 0 10px;
+}
+
+.form-section {
+  width: 100%;
+  padding-top: 32px;
+}
+
+.section-title {
+  font-size: 22px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.section-subtitle {
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+}
+
+
+/* === Інформація користувача === */
+.user-info {
+  margin-bottom: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0;
+  text-align: center;
+}
+.user-info .label {
+  font-weight: 600;
+  margin-right: 4px;
+}
+
+/* === Блоки форми === */
+.form-block {
+  margin-bottom: 20px;
+  margin-top: 24px;
+  border-top: 1px solid #D6D3D1;
+  padding-top: 10px;
+}
+
+.form-block h3 {
+  margin-top: 16px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin: 6px 0 4px;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+/* === Поля вводу === */
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  height: 36px;
+  border: 1px solid #E7E5E4;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+/* === Рядки полів === */
+.input-row {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input-row input {
+  flex: 1;
+  width: 100%;
+}
+
+/* === Додаткові нотатки === */
+.note {
+  font-family: "Lora";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+}
+
+/* === Поля у ряд === */
+.form-field {
+  width: 100%;
+}
+
+.form-field label {
+  margin-bottom: 4px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.form-field input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* === Методи оплати === */
+.payment-method h3 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.payment-method .note {
+  font-family: "Lora";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+}
+
+/* === Радіо-кнопки === */
+.radio-option,
+.radio-option1 {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 8px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  justify-content: flex-start;
+}
+
+.radio-option input,
+.radio-option1 input {
+  width: 20px;
+  height: 20px;
+  accent-color: #8C0E18;
+}
+
+.radio-option span,
+.radio-option1 span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/* === Примітка про комісію === */
+.fee-note {
+  color: #78716C;
+  text-align: center;
+  margin: 10px auto;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+/* === Права секція (корзина / квитки) === */
+.cart-section,
+.cart-section1 {
+  width: 100%;
+  padding: 20px;
+  height: auto;
+  background: #F6ECED;
+  border-radius: 8px;
+}
+
+.cart-section1 h1 {
+  font-family: "Lora";
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 30px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* === Квитки у корзині === */
+.cart-items1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.cart-items {
+  margin-top: 12px;
+}
+
+/* === Картка квитка === */
+.ticket-card {
+  background: #fff;
+  border: 1px dashed #bbb;
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  text-align: center;
+  position: relative;
+}
+
+.remove-btn,
+.remove-btn2 {
+  position: absolute;
+  top: 4px;
+  right: 6px;
+  font-size: 20px;
+  color: #b00;
+  cursor: pointer;
+}
+
+/* === Статус квитка === */
+.ticket-status {
+  position: relative;
+  display: inline-block;
+  background: #7a0d0d;
+  color: #fff;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin-top: 8px;
+}
+
+/* === Таблиці сум === */
+.amount-table {
+  border: 1px solid #E7E5E4;
+  margin-bottom: 20px;
+  background: #fff;
+  padding: 16px;
+}
+
+.table-header,
+.table-row,
+.table-total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  padding: 6px 0;
+}
+
+.table-row {
+  font-weight: 700;
+  font-size: 16px;
+  border-bottom: 1px solid #D6D3D1;
+}
+
+.table-total {
+  justify-content: flex-end;
+  gap: 10px;
+  font-size: 15px;
+}
+
+/* === Умови === */
+.terms-block {
+  margin-top: 30px;
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.terms-block h3 {
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+}
+
+.terms-block p,
+.terms-block a {
+  font-family: "Lora";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.terms-block a {
+  color: #8C0E18;
+  text-decoration: underline;
+}
+
+
+/* === Таблиця сум === */
+.table-header {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.table-total {
+  margin-top: 8px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.table-total strong {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/* === Кнопка покупки === */
+.purchase-btn {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.purchase-btn button {
+  background: #8c0e18;
+  border: none;
+  width: 160px;
+  height: 42px;
+  padding: 10px 16px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 15px;
+  border-radius: 50px;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.purchase-btn button:hover {
+  background: #700c0c;
+}
+
+/* === Виграшна модалка === */
+.winning-modal {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+}
+
+/* Панель справа — адаптована */
+.winning-modal-content {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  background: #f3f3f3;
+  border-left: none;
+  overflow-y: auto;
+  animation: winningSlideIn 0.3s ease;
+  font-family: "Roboto", sans-serif;
+  color: #333;
+}
+
+/* Шапка */
+.winning-modal-header {
+  background: #8b1c1c;
+  color: #fff;
+  padding: 12px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 48px;
+}
+
+.winning-modal-header h2 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.winning-close-btn {
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Вступний текст */
+.winning-intro {
+  font-family: "Lora";
+  font-size: 16px;
+  line-height: 24px;
+  padding: 16px;
+  text-align: center;
+}
+
+/* Пошук */
+.winning-search-bar {
+  padding: 0 16px 15px;
+}
+
+.winning-last {
+  color: #a71f1f;
+  font-size: 12px;
+  margin-bottom: 4px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.winning-search-input {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.winning-search-input input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.winning-search-btn {
+  background: #b43a3a;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  height: 44px;
+}
+
+/* Заголовок результатів */
+.winning-results-title {
+  font-family: "Lora";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  padding: 12px;
+  color: #222;
+  text-align: center;
+}
+
+/* Таблиця результатів */
+.winning-results-table {
+  padding: 0 16px;
+}
+
+.winning-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  font-size: 16px;
+  border-bottom: 1px solid #d4d4d4;
+}
+
+.winning-row span:first-child {
+  font-family: "Roboto";
+  font-weight: 600;
+  font-size: 16px;
+}
+
+/* Нижня кнопка */
+.winning-modal-footer {
+  padding: 24px;
+  border-top: 1px solid #ccc;
+  text-align: center;
+}
+
+.winning-modal-footer button {
+  width: 100%;
+  padding: 12px 0;
+  border: 1px solid #ccc;
+  background: #f9f9f9;
+  color: #333;
+  font-size: 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* === Банківська інформація === */
+.bank-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.form-block1 {
+  margin-bottom: 20px;
+  margin-top: 24px;
+  border-top: 1px solid #D6D3D1;
+  padding-top: 10px;
+}
+
+.form-block1 h3 {
+  margin-top: 16px;
+  font-family: "Lora";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.bank-details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.payment-method1 h3 {
+  margin-top: 24px;
+  font-family: "Lora";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+}
+
+/* Анімація */
+@keyframes winningSlideIn {
+  from { right: -100%; opacity: 0; }
+  to { right: 0; opacity: 1; }
+}
+
+
+/* === Примітка про комісію === */
+.fee-note1 {
+  color: #78716C;
+  margin: 16px auto;
+  text-align: center;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 0;
+}
+
+/* === Ліва секція форми === */
+.form-section1 {
+  width: 100%;
+  padding-top: 32px;
+  padding-bottom: 120px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+/* === Іконки === */
+.icones {
+  margin-right: 6px;
+  margin-left: 0;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* === Загальний контейнер === */
+.wrapper1 {
+  max-width: 100%;
+  margin: 20px auto;
+  padding: 0 10px 150px;
+  background-color: #FAFAF9;
+}
+
+/* === Верхня частина (заголовок + PDF-посилання) === */
+.header {
+  display: flex;
+  flex-direction: column; /* у стовпець */
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-align: center;
+}
+
+.title23 {
+  font-family: "Lora";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  color: #292524;
+}
+
+.pdf-link {
+  font-weight: 700;
+  font-size: 15px;
+  color: #8C0E18;
+  text-decoration: underline;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon232 img {
+  margin-bottom: -2px;
+  margin-left: 4px;
+  width: 18px;
+  height: 18px;
+}
+
+/* === Блоки === */
+.block {
+  padding: 10px 0;
+}
+
+.block-label1 {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: #57534E;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.block-label1 img {
+  width: 160px;
+  height: auto;
+}
+
+/* === Номери === */
+.numbers,
+.numbers1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+}
+
+.numbers1 img {
+  width: 64px;
+  height: 28px;
+}
+
+/* === Картки квитків === */
+.cart-items {
+  display: grid;
+  grid-template-columns: 1fr; /* по одній на ряд */
+  gap: 10px;
+  background: #f9eded;
+  margin-top: 16px;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.section-title1 {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.ticket-card1 img,
+.ticket-card2 img {
+  width: 100%;
+  max-width: 220px;
+  margin: 0 auto;
+  display: block;
+}
+
+.ticket-card2 img {
+  margin-top: 5px;
+}
+
+/* === Кнопки видалення та бейджики === */
+.ticket-card1 img {
+  cursor: pointer;
+}
+
+.remove-btn1 {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-size: 24px;
+  color: #b00;
+  cursor: pointer;
+}
+
+.badge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: #2ca34a;
+  color: #fff;
+  font-size: 10px;
+  padding: 5px 6px;
+  border-radius: 50%;
+  font-weight: bold;
+}
+  .wrapper1 {
+    padding-bottom: 120px;
+  }
+
+  .cart-items {
+    grid-template-columns: 1fr;
+  }
+
+  .title23 {
+    font-size: 18px;
+  }
