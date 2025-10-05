@@ -873,7 +873,7 @@ letter-spacing: 1px;
 
 .ticket-status {
     position: absolute;
-    bottom: -45px;
+    bottom: 180px;
     /* right: 11px; */
     background: #7a0d0d;
     color: #fff;
