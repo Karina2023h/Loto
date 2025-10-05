@@ -1534,6 +1534,41 @@ margin-bottom: 2px;
   gap: 5px;
 }
 
+
+
+
+/* Зображення зверху */
+.ticket img {
+  position: relative;
+  z-index: 2; /* цифра і SVG завжди зверху */
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+/* Фон, який з’являється при наведенні */
+.ticket::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url('../3/Layer_3.svg') center/cover no-repeat; /* встав своє фото */
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 1; /* фон під SVG */
+}
+
+/* При наведенні */
+.ticket:hover::before {
+  opacity: 1; /* плавне з’явлення фону */
+}
+
+/* Невелике збільшення зображення */
+.ticket:hover img {
+  transform: scale(1.02);
+}
+
+
 .ticket {
   display: flex;
   align-items: center;

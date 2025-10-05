@@ -698,17 +698,29 @@ input[type="email"] {
 }
 
 .remove-btn2 {
-  position: relative;
-  top: -80px;
-  right: 0;
-  font-size: 26px;
-  color: #b00;
-  cursor: pointer;
+ position: relative;
+        top: -140px;
+        right: -227px;
+        font-size: 26px;
+        color: #b00;
+        cursor: pointer;
 }
 
+
+.badge {
+    position: relative;
+    top: -112px!important;
+    right: -168px!important;
+    background: #2ca34a;
+    color: #fff;
+    font-size: 11px;
+    padding: 6px 6px;
+    border-radius: 50%;
+    font-weight: bold;
+}
 .ticket-status {
   position: absolute;
-  bottom: -40px;
+  bottom: -150px;
   background: #7a0d0d;
   color: #fff;
   font-size: 12px;

@@ -1,0 +1,33 @@
+<svg width="164" height="72" viewBox="0 0 164 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_12083_4198" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="164" height="72">
+<path d="M159 0H5C2.23858 0 0 2.23858 0 5V67C0 69.7614 2.23858 72 5 72H159C161.761 72 164 69.7614 164 67V5C164 2.23858 161.761 0 159 0Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_12083_4198)">
+<path d="M164 0H0V72H164V0Z" fill="#E3C5C8"/>
+<path d="M6 30H0V36L6 30Z" fill="#E3C5C8"/>
+<path d="M6 36H0V42L6 36Z" fill="#E3C5C8"/>
+<path d="M6 12H0V18L6 12Z" fill="#E3C5C8"/>
+<path d="M6 24H0V30L6 24Z" fill="#E3C5C8"/>
+<path d="M6 18H0V24L6 18Z" fill="#E3C5C8"/>
+<path d="M6 42H0V48L6 42Z" fill="#E3C5C8"/>
+<path d="M0 0V6L6 0H0Z" fill="#E3C5C8"/>
+<path d="M6 66H0V72L6 66Z" fill="#E3C5C8"/>
+<path d="M0 6V12L6 6H0Z" fill="#E3C5C8"/>
+<path d="M6 54H0V60L6 54Z" fill="#E3C5C8"/>
+<path d="M6 60H0V66L6 60Z" fill="#E3C5C8"/>
+<path d="M6 48H0V54L6 48Z" fill="#E3C5C8"/>
+<path d="M158 42H164V36L158 42Z" fill="#E3C5C8"/>
+<path d="M158 36H164V30L158 36Z" fill="#E3C5C8"/>
+<path d="M158 60H164V54L158 60Z" fill="#E3C5C8"/>
+<path d="M158 48H164V42L158 48Z" fill="#E3C5C8"/>
+<path d="M158 54H164V48L158 54Z" fill="#E3C5C8"/>
+<path d="M158 30H164V24L158 30Z" fill="#E3C5C8"/>
+<path d="M164 72V66L158 72H164Z" fill="#E3C5C8"/>
+<path d="M158 6H164V0L158 6Z" fill="#E3C5C8"/>
+<path d="M164 66V60L158 66H164Z" fill="#E3C5C8"/>
+<path d="M158 18H164V12L158 18Z" fill="#E3C5C8"/>
+<path d="M158 12H164V6L158 12Z" fill="#E3C5C8"/>
+<path d="M158 24H164V18L158 24Z" fill="#E3C5C8"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M68.01 21.54L81.55 8V35.08L68.01 21.54ZM82.36 14.68H102.74L82.36 35.06V14.68ZM110 35.64H82.93L96.47 22.11L110.01 35.64H110ZM54 36.43H80.98L67.49 49.92L54 36.43ZM61.27 57.29H81.55V37.01L61.27 57.29ZM60.65 35.64V15.31L80.98 35.64H60.65ZM82.36 64L95.85 50.51L82.36 37.02V64ZM103.25 36.46V56.78L82.93 36.46H103.25Z" fill="#F6ECED"/>
+</g>
+</svg>
