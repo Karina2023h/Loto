@@ -348,19 +348,26 @@ flex-direction: row;
   }
 
   .cart-items1 {
-    grid-template-columns: 1fr;
+  grid-template-columns: repeat(2, 1fr);
     gap: 10px;
   }
 
-  .remove-btn2 {
-    top: -70px;
-    font-size: 26px;
-  }
+  .ticket-card1 img {
+    width: 154px!important;
+}
+
+       .remove-btn2 {
+        top: -90px;
+        font-size: 26px;
+        right: -155px;
+    }
+
 
   .ticket-status {
-    bottom: -35px;
-    font-size: 11px;
-    padding: 4px 8px;
+           bottom: 258px;
+        font-size: 8px;
+        padding: 4px 8px;
+        left: 2px;
   }
 
   /* --- ФУТЕР --- */
@@ -808,9 +815,9 @@ letter-spacing: 0%;
 }
 
 .form-section1 {
-    width: 675px;
+    width: auto;
     /* padding: 25px; */
-    padding-top: 48px;
+    padding-top: 10px;
     padding-bottom: 500px;
 }
 
@@ -926,7 +933,7 @@ width: 70px;
 
 .ticket-card2 img{
                margin-top: 1px;
-        width: 137px;
+        width: 137px!important;
         margin-left: 4px;
 }
 
