@@ -1203,3 +1203,128 @@ input[type="email"] {
  .mobile-header {
     display: none;
   }
+
+
+  /* ===== CART MODAL ===== */
+.cart-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 4000;
+}
+
+.cart-content {
+  background: #ffffff;
+  border-radius: 8px;
+  width: 380px;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.3s ease;
+  font-family: "Roboto", sans-serif;
+}
+
+.cart-content h2 {
+ font-family: "Roboto";
+font-weight: 300;
+font-style: Light;
+font-size: 22px;
+color: #292524;
+leading-trim: NONE;
+line-height: 26px;
+letter-spacing: 0%;
+
+margin-bottom: 2px;
+    padding: 16px;
+    background-color: #ffffff;
+    margin-top: 0px;
+}
+
+.cart-card {
+    padding: 10px;
+  background: #F5F5F4;
+  height: 160px;
+  margin-bottom: -5px;
+}
+
+.ticket-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.ticket {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  border: 1px dashed #ccc;
+  border-radius: 4px;
+  padding: 6px 10px;
+  min-width: 80px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #6a0d0d;
+}
+
+.ticket .remove {
+  color: #b00;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+.cart-total {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Roboto";
+font-weight: 700;
+font-style: Bold;
+font-size: 18px;
+leading-trim: NONE;
+line-height: 22px;
+letter-spacing: 0%;
+
+  background-color: #E7E5E4;
+  padding-top: 10px;
+  margin-top: 4px;
+  color: #3d3d3d;
+}
+
+
+.alles{
+   background-color: #E7E5E4;
+   padding: 16px;
+}
+.purchase-btn {
+  margin-top: 10px;
+}
+
+.purchase-btn button {
+  background: #8C0E18;
+  color: #fff;
+  border: none;
+  padding: 10px 0;
+  width: 100%;
+  font-weight: bold;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.3s;
+
+}
+
+.purchase-btn button:hover {
+  background: #8C0E18;
+}
+
+.winning-close-btn {
+    cursor: pointer;
+    font-size: 23px;
+    font-weight: bold;
+    color: black;
+    position: relative;
+    z-index: 3;
+}

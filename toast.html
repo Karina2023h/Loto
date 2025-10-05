@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Toast message</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .toast {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background-color: #25c481;
+      color: white;
+      padding: 10px 16px;
+      border-radius: 6px;
+      font-size: 16px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.4s ease;
+    }
+
+    .toast.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .toast i {
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <div class="toast" id="toast">
+    <i>✔</i>
+    <span id="toast_message">{toast_message}</span>
+  </div>
+
+  <script>
+    const toast = document.getElementById('toast');
+
+    function showToast(message) {
+      document.getElementById('toast_message').textContent = message;
+      toast.classList.add('show');
+      setTimeout(() => toast.classList.remove('show'), 3000);
+    }
+
+    // Приклад використання
+    showToast('{toast_message}');
+  </script>
+</body>
+</html>

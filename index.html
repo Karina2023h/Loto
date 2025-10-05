@@ -14,7 +14,7 @@
   <!-- Для екранів до 768px -->
   <link rel="stylesheet" href="css/style-768.css" media="only screen and (max-width: 768px)">
 
-    <link rel="stylesheet" href="css/style-375.css" media="only screen and (max-width: 480px)">
+    <link rel="stylesheet" href="css/style-375.css" media="only screen and (max-width: 540px)">
 </head>
 
 <body>
@@ -31,10 +31,6 @@
         <a href="index.html" class="active">Happdrættið</a>
       </nav>
     </div>
-
-
-
-
     <div class="right">
 
     <!-- Іконка пошук -->
@@ -46,10 +42,37 @@
 
 
 <!-- Іконка корзина -->
-<a href="card.html" class="icon">
+<a  class="icon" id="cartIcon">
   <img src="./img/SIBS - Icons.svg" alt="Cart">
   <span class="cart-badge">2</span>
 </a>
+
+
+<div class="cart-modal" id="cartModal">
+  <div class="cart-content">
+    <h2>Tickets in cart</h2>
+
+    <div class="cart-items234">
+      <div class="cart-card">
+        <div class="ticket-list">
+        
+        </div>
+      </div>
+      <div class="alles">
+      <div class="cart-total">
+        <span>Total</span>
+        <strong>6.900</strong>
+      </div>
+
+ <div class="purchase-btn">
+  <a href="card.html" class="purchase-link">
+    <button>Purchase</button>
+  </a>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 <!-- Іконка профіль -->
@@ -479,9 +502,46 @@ text-decoration: none;
   </div>
 </div>
 
+<script>
+  const cartIcon = document.getElementById("cartIcon");
+  const cartModal = document.getElementById("cartModal");
+  const closeCart = document.getElementById("closeCart");
+  const purchaseBtn = document.querySelector(".purchase-btn button");
+
+  // Відкрити модальне вікно
+  cartIcon.addEventListener("click", () => {
+    cartModal.style.display = "flex";
+  });
+
+  // Закрити при натисканні на хрестик
+  closeCart.addEventListener("click", () => {
+    cartModal.style.display = "none";
+  });
+
+  // Закрити при натисканні поза вікном
+  window.addEventListener("click", (e) => {
+    if (e.target === cartModal) {
+      cartModal.style.display = "none";
+    }
+  });
+
+  // Закрити при натисканні на кнопку Purchase
+  purchaseBtn.addEventListener("click", () => {
+    cartModal.style.display = "none";
+
+    // (опціонально) перенаправлення:
+    // window.location.href = "https://example.com/purchase";
+  });
+</script>
+
+
+
 <script src="./js/modal.js"></script>
 <script src="./js/modal1.js"></script>
 <script src="./js/modal2.js"></script>
 <script src="./js/modal3.js"></script>
+
+
+
 </body>
 </html>

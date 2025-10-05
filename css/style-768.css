@@ -851,10 +851,16 @@ letter-spacing: 1px;
 
 }
 
+.ticket-card1 img {
+    width: 217px;
+}
+
 .cart-items1 {
+
+  margin-left: -30px;
     display: grid
 ;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 12px;
     margin-top: 20px;
 }
@@ -864,18 +870,31 @@ letter-spacing: 1px;
   margin-top: 15px;
 }
 
-.remove-btn2 {
+    .remove-btn2 {
+        position: relative;
+        top: -145px;
+        right: -200px;
+        font-size: 30px;
+        color: #b00;
+        cursor: pointer;
+    }
+
+
+    .badge {
     position: relative;
-    top: -98px;
-    right: 0px;
-    font-size: 30px;
-    color: #b00;
-    cursor: pointer;
+    top: -114px!important;
+    right: -165px!important;
+    background: #2ca34a;
+    color: #fff;
+    font-size: 11px;
+    padding: 6px 6px;
+    border-radius: 50%;
+    font-weight: bold;
 }
 
 .ticket-status {
     position: absolute;
-    bottom: -45px;
+    bottom: -378px;
     /* right: 11px; */
     background: #7a0d0d;
     color: #fff;
@@ -957,16 +976,21 @@ content: "";
     background: #fff;
 }
 
-/* Адаптивність */
-@media (max-width: 768px) {
-  .page-wrapper {
-    flex-direction: column-reverse;
-  }
+
+.cart-modal {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 4000;
+}
+
   .form-section {
     border-right: none;
     border-bottom: 1px solid #e0e0e0;
   }
-}
 
 
 
@@ -1341,7 +1365,7 @@ letter-spacing: 0%;
     width: 675px;
     /* padding: 25px; */
     padding-top: 48px;
-    padding-bottom: 500px;
+    padding-bottom: 1px;
 }
 
 
