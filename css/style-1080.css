@@ -1328,3 +1328,14 @@ letter-spacing: 0%;
     position: relative;
     z-index: 3;
 }
+
+
+.cart-modal {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 4000;
+}
