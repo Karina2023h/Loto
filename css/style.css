@@ -294,7 +294,7 @@ cursor: pointer;
   transform: translateX(-50%);
   width: 100%;  /* ширину підбери під картинку */
   height: 100%;  /* висоту підбери під картинку */
-  background: url("./3/Flyout.svg") no-repeat center/contain;
+  background: url("../3/Flyout.svg") no-repeat center/contain;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.2s;
